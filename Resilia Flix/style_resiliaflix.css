@@ -103,6 +103,7 @@
 
     display: flex;
     justify-content: center;
+    
 }
 
 .categorias li {
@@ -123,33 +124,12 @@
     background: #CCCCCC;
 }
 
-.categorias li a {
-
-    text-decoration: none;
-}
-
-.categorias h2 {
-
-    font-size: 23px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px;
-}
 
 .img-categorias {
 
     width: 100%;
 }
 
-.legenda-categorias {
-
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 15px;
-    margin: 5px;
-}
 
 .rodape {
 
