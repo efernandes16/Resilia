@@ -102,7 +102,9 @@
 .categorias {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -111,16 +113,15 @@
     padding: 10px;
     border: 2px solid #000000;   
     border-radius: 5px;
-    background: #02476ea2;
+    background: #000000;
     width: 25%;
     margin: 10px;
-    text-align: center;
 }
 
 .categorias li:hover {
 
-    padding: 20px;
-    transition: 30ms;
+    /*padding: 25px;
+    transition: 15ms;*/
     background: #CCCCCC;
 }
 
@@ -129,7 +130,6 @@
 
     width: 100%;
 }
-
 
 .rodape {
 
