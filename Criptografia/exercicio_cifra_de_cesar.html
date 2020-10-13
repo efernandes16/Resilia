@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <head lang="pt-br">
+
+    <title>Cifra de Cesar</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <div class="paginaInteira">
+        
+        <h3 class="tituloPrincipal">Experimentando Cifra de Cesar - Criptografia</h3>
+
+        <script>
+
+            function mostra(frase){
+
+                document.write(frase);
+                document.write("<br><br>");
+            }
+
+            var nome = prompt("Qual mensagem deseja criptografar?");
+                    // Z = (((90 - 65 + 1) % 26) + 65)
+                    //((letra do Array - Valor A + DESL) % Delimitador ) + Valor A
+
+            var pulo = parseInt(prompt("Qual será o deslocamento?"));
+
+            function cifraComCifraDeCesar( deslocamento, mensagem) {
+                var arrayMensagem = []; //recebe uma mensagem
+                var arrayCriptografado = []; //recebe criptpgrafado
+                var numeroA = 65;
+                var tamanhoAlfabeto = 26;
+
+                for (var i = 0; i < mensagem.length ; i++) { //transforma letra em numero
+                    arrayMensagem.push(((mensagem.charCodeAt(i) - numeroA + deslocamento) % tamanhoAlfabeto) + numeroA)
+                }
+
+                for (var i = 0; i < mensagem.length ; i++) { //transforma numero em letra
+                    arrayCriptografado.push(String.fromCharCode(arrayMensagem[i]))
+                }
+
+                return arrayCriptografado.join("");
+            }
+            
+            function decifraComCifraDeCesar( deslocamento, mensagem) {
+                var arrayMensagem = []; //recebe uma mensagem
+                var arrayDescriptografado = []; //recebe criptpgrafado
+                var numeroA = 65;
+                var tamanhoAlfabeto = 27;
+
+                for (var i = 0; i < mensagem.length ; i++) { //transforma letra em numero
+                    arrayMensagem.push(((mensagem.charCodeAt(i) - numeroA + deslocamento) % tamanhoAlfabeto) + numeroA - deslocamento)
+                }
+
+                for (var i = 0; i < mensagem.length ; i++) { //transforma numero em letra
+                    arrayDescriptografado.push(String.fromCharCode(arrayMensagem[i]))
+                }
+
+                return arrayDescriptografado.join("");
+            }
+
+            var mensagemCriptografada = cifraComCifraDeCesar(pulo,nome);
+            console.log("A mensagem criptografada é: " + mensagemCriptografada);
+            
+            var mensagemDescriptografada = decifraComCifraDeCesar(pulo,nome);
+            console.log("A mensagem descriptografada é: " + mensagemDescriptografada);
+
+            mostra("A mensagem que deseja criptografar é: " + "<strong>" + nome + "</strong>");
+            mostra("A mensagem encriptada usou " + "<strong>" + pulo + "</strong>" + " de pulo para deslocamento.");
+            mostra("Sua criptografia é: " + "<strong>" + mensagemCriptografada + "<strong>");
+            mostra("Para válidar a criptografia e descriptografia, acesse o Console JavaScript deste navegador.");
+
+        </script>
+
+        <img src="Tabela_ASCII_.gif">
+    </div>
+
+  </body>
+
+
+</html>
+

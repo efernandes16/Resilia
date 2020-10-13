@@ -1,0 +1,26 @@
+.paginaInteira {
+
+    background: goldenrod;
+    width: 100%;
+}
+
+.paginaInteira h3 {
+    margin-top: 10px;
+}
+
+.tituloPrincipal {
+
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+img {
+
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
