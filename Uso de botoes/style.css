@@ -1,0 +1,29 @@
+body{
+    background-color: aquamarine;
+}
+
+.botaoIniciar {
+    background-color: black;
+    color: white;
+    font: normal 18px Arial;
+}
+
+.todosOsBotoes {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todosOsBotoes button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25px;
+    width: 200px;
+    margin: 1px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: white;
+}
+
