@@ -9,31 +9,31 @@
 <body>
 
     <div class="todosOsBotoes">
-        <button type="button" value="botao" onclick="recarrega()">Botao 1</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 2</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 3</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 4</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 5</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 6</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 7</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 8</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 9</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 10</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 11</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 12</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 13</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 14</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 15</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 16</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 17</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 18</button>
-        <button type="button" value="botao" onclick="recarrega()">Botao 19</button>
+        <button type="button" onclick="adicionaBotaoContador()">Adicionar botão</button>
     </div>
 
     <script>
 
-        function recarrega (){
-            document.location.reload(true);
+        //Criar botao a partir de um botao
+
+        var contador = 0;
+        function adicionaBotaoContador () {
+
+            var body = document.querySelector('body');
+
+            var maisUmBotao = document.createElement('button');
+                maisUmBotao.onclick = function recarrega (){
+                        document.location.reload(true);
+                    }
+            
+            contador++;    
+            maisUmBotao.innerText = `Botão nº ${contador}`;
+            body.appendChild(maisUmBotao);
+                if (document.body.style.background == "blue") {
+                    document.body.style.background = "yellow"
+                } else {
+                    document.body.style.background = "blue"
+                }
         }
 
     </script>
