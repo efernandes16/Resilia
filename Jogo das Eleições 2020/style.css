@@ -1,0 +1,88 @@
+body {
+    background-color: rgba(2, 61, 37, 0.678);
+}
+
+h1 {
+    color: yellow;
+    font: normal 50px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h2 {
+    font: normal 40px;
+    text-align: center;
+    color: white;
+    background-color: gold;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+h3 {
+    text-align: center;
+    font: normal 20px Arial;
+    font-weight: bold;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.classJake {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: teal;
+    border: solid 5px white;
+    border-radius: 5px 5px;
+}
+
+.classJake :hover {
+    padding: 15px;
+}
+
+.classMarceline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: teal;
+    border: solid 5px white;
+    border-radius: 5px 5px;
+}
+
+.classMarceline :hover {
+    padding: 15px;
+}
+
+.classJujuba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: teal;
+    border: solid 5px white;
+    border-radius: 5px 5px;
+}
+
+.classJujuba :hover {
+    padding: 15px;
+}
+
+button {
+    margin: 15px;
+    height: 30px;
+    color: white;
+    background-color: darkgoldenrod;
+}
+
