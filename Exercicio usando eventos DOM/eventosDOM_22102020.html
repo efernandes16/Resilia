@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com DOM e Função Anonima</title>
+</head>
+
+<body>
+    
+    <script>
+
+        var body = document.querySelector('body');
+        var h1 = document.createElement('h1');
+        
+        body.appendChild(h1);
+
+        h1.innerText = "olá";
+
+        h1.addEventListener('click', function() {
+            document.write("<h1> Clicou </h1>")
+        })
+
+        h1.addEventListener('mouseover', function () {
+            document.write("<h1>OLÁ</h1>")
+        })
+
+    </script>
+
+</body>
+</html>
